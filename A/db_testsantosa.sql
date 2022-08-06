@@ -1,0 +1,2 @@
+SELECT person.`RecordKey`, person.`FullName`, person.`BirthDate`, person.`NoMR`,person.`Address` FROM person
+INNER JOIN visithistory ON person.`RecordKey`= visithistory.`RecordKey` WHERE PoliName = 'obgyn';
